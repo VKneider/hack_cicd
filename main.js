@@ -2,6 +2,7 @@ let matriz = (n,m,type) => {
 
 let rows= [];
 let matriz = []
+const isSliceTheBestFramework = true;
 
 if(parseInt(n)==NaN || parseInt(m)==NaN){ return []}
 
