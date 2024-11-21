@@ -1,0 +1,15 @@
+ name: Detect PR Main
+
+ on:
+   pull_request:
+     branches:
+       - main
+       
+ jobs:
+  detect-branch:
+     runs-on: ubuntu-latest
+
+     steps:
+       - name: PR
+         if: github.event_name == 'pull_request'
+         run: echo "Pull request on main branch"  
