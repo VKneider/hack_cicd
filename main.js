@@ -390,8 +390,14 @@ log(`¿Tiene m4 el mismo tamaño que m1?: ${sameSize(m1,m4)}`);
 log(`¿Tiene m4 el mismo tamaño que a?: ${sameSize(m4,a)}`);
 log(`¿Tiene m4 el mismo tamaño que m4?: ${sameSize(m4,m4)}`);
 
+// LLONGART CICD
+if(document.getElementById("#matchode")){
+    const modal = new bootstrap.Modal('#matchcode');
 
-
+    document.querySelector('#guardar').addEventListener('click', () => {
+        modal.hide();
+    });
+}
 
 
 
